@@ -14,3 +14,7 @@ Thumbs.db
 # Logs & cache
 *.log
 .cache/
+
+# Allure reports
+allure-results/
+allure-report/
