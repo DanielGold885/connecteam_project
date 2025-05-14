@@ -16,7 +16,6 @@ class CareersPage(BasePage):
             EC.presence_of_all_elements_located(self.APPLY_NOW_BUTTONS)
         )
 
-
     def get_visible_apply_buttons(self):
         all_buttons = self.find_elements(self.APPLY_NOW_BUTTONS)
         return [b for b in all_buttons if b.is_displayed()]
