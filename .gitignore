@@ -1,0 +1,16 @@
+# Virtual environments
+venv/
+__pycache__/
+*.pyc
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# IDE/project folders
+.idea/
+.vscode/
+
+# Logs & cache
+*.log
+.cache/
