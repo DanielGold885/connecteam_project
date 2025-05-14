@@ -5,24 +5,6 @@ The goal was to automate job application flow on the [Connecteam Careers page](h
 
 ---
 
-## 📌 Project Goal
-
-Automate the following test scenario:
-
-1. Navigate to [https://connecteam.com](https://connecteam.com)
-2. Scroll to the footer and click **Careers**
-3. Filter positions by **R&D**
-4. For each visible R&D position:
-   - Click **Apply now**
-   - Fill out the application form:
-     - First Name
-     - Last Name
-     - Email
-     - Phone
-     - CV upload
-   - 🚫 Do **not** submit the application (form triggers reCAPTCHA)
-
----
 
 ## 🚀 How to Run
 
