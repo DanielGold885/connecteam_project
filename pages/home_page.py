@@ -5,7 +5,6 @@ from configs.constants import BASE_URL
 
 class HomePage(BasePage):
     URL = BASE_URL
-
     CAREERS_LINK = (By.LINK_TEXT, "Careers")
 
     def load(self):

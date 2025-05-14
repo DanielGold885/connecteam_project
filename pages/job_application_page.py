@@ -3,6 +3,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from pages.base_page import BasePage
 
+
 class JobApplicationPage(BasePage):
     IFRAME = (By.ID, "grnhse_iframe")
     FIRST_NAME = (By.ID, "first_name")
@@ -15,7 +16,6 @@ class JobApplicationPage(BasePage):
         WebDriverWait(self.driver, 10).until(
             EC.frame_to_be_available_and_switch_to_it(self.IFRAME)
         )
-        print("✅ Switched to application form iframe")
 
     def fill_application_form(self, details, cv_path):
         self.switch_to_form_iframe()
@@ -29,8 +29,4 @@ class JobApplicationPage(BasePage):
         self.find_element(self.EMAIL).send_keys(details["email"])
         self.find_element(self.PHONE).send_keys(details["phone"])
         self.find_element(self.CV_UPLOAD).send_keys(cv_path)
-
-        print("✅ Filled out the form (inside iframe)")
-
         self.driver.switch_to.default_content()
-        print("↩️ Switched back from iframe")
