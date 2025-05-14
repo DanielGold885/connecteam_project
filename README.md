@@ -22,8 +22,30 @@ venv\Scripts\activate         # On Windows
 pip install -r requirements.txt
 ```
 
-## ▶️ 3. Run the test
+## ▶ 3. Run tests and generate Allure results
 
 ```bash
-pytest tests/test_apply_to_rnd.py -v
+pytest --alluredir=allure-results
 ```
+
+
+#### Prerequisites:
+
+### Install the Allure report:
+💻 For Windows:
+Install with Chocolatey:
+```bash
+choco install allure
+```
+
+🐧 For Linux/macOS:
+Install with Homebrew (macOS):
+```bash
+brew install allure
+```
+
+### Launch the report to view results post-run:
+```bash
+allure serve allure-results
+```
+
